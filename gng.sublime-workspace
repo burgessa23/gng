@@ -1,0 +1,690 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"po",
+				"portrait"
+			],
+			[
+				"curr",
+				"currOrientaion"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"cu",
+				"currentSlide"
+			],
+			[
+				"sce",
+				"sceneID"
+			],
+			[
+				"long",
+				"longitude"
+			],
+			[
+				"lon",
+				"longitude"
+			],
+			[
+				"lat",
+				"latitude"
+			],
+			[
+				"la",
+				"latitude"
+			],
+			[
+				"ph",
+				"phone"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"store",
+				"stores"
+			],
+			[
+				"c",
+				"c	console.log"
+			],
+			[
+				"pos",
+				"postalCode"
+			],
+			[
+				"h",
+				"h1"
+			],
+			[
+				"jQ",
+				"jQuery"
+			],
+			[
+				"st",
+				"stores"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"get",
+				"get"
+			],
+			[
+				"for",
+				"forceRefresh"
+			],
+			[
+				"valu",
+				"value=  (attribute)"
+			],
+			[
+				"start",
+				"startSceneByName"
+			],
+			[
+				"config",
+				"configData"
+			],
+			[
+				"cha",
+				"changed"
+			],
+			[
+				"Cont",
+				"Controller"
+			],
+			[
+				"text",
+				"text-align:   (property)"
+			],
+			[
+				"land",
+				"landscape"
+			],
+			[
+				"scen",
+				"scenes"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
+				"on",
+				"onclick"
+			],
+			[
+				"un",
+				"undefined"
+			],
+			[
+				"ty",
+				"typeof"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"loc",
+				"localStorage"
+			],
+			[
+				"lin",
+				"line-height:   (property)"
+			],
+			[
+				"colo",
+				"color:   (property)"
+			],
+			[
+				"col",
+				"col	<col>"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"findStor",
+				"findStoreCity"
+			],
+			[
+				"ui",
+				"ui-datebox-container"
+			],
+			[
+				"findStore",
+				"findStoreState"
+			],
+			[
+				"paddin",
+				"padding	padding: all"
+			],
+			[
+				"back",
+				"background	background-color: transparent"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"di",
+				"display	display: block"
+			],
+			[
+				"co",
+				"console.log();"
+			],
+			[
+				"rot1",
+				"rot1impressions"
+			],
+			[
+				"end",
+				"end	end (ERB)"
+			],
+			[
+				"l",
+				"li"
+			],
+			[
+				"detailI",
+				"detailImageWrapper"
+			],
+			[
+				"fi",
+				"function  (keyword)"
+			],
+			[
+				"padding-",
+				"padding-top:   (property)"
+			],
+			[
+				"fu",
+				"function  (keyword)"
+			],
+			[
+				"s",
+				"style=  (attribute)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/JSHint/JSHint.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"gc",
+				"Git: Commit"
+			],
+			[
+				"ga",
+				"Git: Add..."
+			],
+			[
+				"GC",
+				"Git: Commit"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"GA",
+				"Git: Add..."
+			],
+			[
+				"gpushc",
+				"Git: Push Current Branch"
+			],
+			[
+				"set sr",
+				"Set Syntax: Ruby"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Disable Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Format: Javascript"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"pac",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"Snippet: var",
+				"Snippet: <var>"
+			]
+		],
+		"width": 588.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/andrewburgess/.profile",
+		"/Users/andrewburgess/.bash_profile",
+		"/Users/andrewburgess/.bashrc",
+		"/Users/andrewburgess/local/node_test/mobile/statictest/HSN/Mobile/scripts/mHR.js",
+		"/Users/andrewburgess/local/node_test/mobile/statictest/find-a-store-results.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/statictest/index.html",
+		"/Users/andrewburgess/local/node_test/mobile/statictest/find-a-store.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/statictest/contact-form.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/statictest/bbtest.html",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/JsFormat/Default (OSX).sublime-keymap",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/JsFormat/JsFormat.sublime-settings",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/find-a-store-results.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/mHR.js",
+		"/Users/andrewburgess/RailsProj/maptest_static/config.ru",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/andrewburgess/local/node_test/mobile/oneMap/oneMap/scripts/bingUtils.js",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/andrewburgess/local/node_test/mobile/index.html",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/User/sublime-jslint.sublime-settings",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/sublime-jslint/sublime-jslint.sublime-settings",
+		"/Applications/MAMP/conf/apache/httpd.conf",
+		"/Users/andrewburgess/local/node_test/mobile/responsive_test/galaxys3.html",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/Archive 3/find-a-store.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/scripts/mHR.js",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/scripts/stores.html",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/hardrock/styles/photoswipe.css",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/styles/hrMobileStyles.css",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/hardrock/styles/lteIE8Styles.m.css",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/hardrock/styles/hrMobileStyles.css",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/hardrock/styles/attMobileThemes.m.css",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/index.html",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/styles/attMobileThemes.css",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/styles/interimMobileThemes.m.css",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/index copy.html",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/index12.html",
+		"/Applications/MAMP/htdocs/personal_projects/aListApart/index.html",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/scripts/jquery.mobile-1.0.1.min.js",
+		"/Users/andrewburgess/Downloads/index(1).html",
+		"/Users/andrewburgess/Downloads/0723-b/index.html",
+		"/Users/andrewburgess/Desktop/0723/index.html",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/coverage-viewer-lte-results.m.html",
+		"/Users/andrewburgess/Downloads/oampo-Audiolet-631198c/examples/template/index.htm",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/User/zen-coding.sublime-settings",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/ZenCoding/zen-coding.sublime-settings",
+		"/Users/andrewburgess/Dropbox/test.html",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/4g-lte.m.html",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/Themr/Default (OSX).sublime-keymap",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/andrewburgess/local/node_test/mobile/interimHome/privacy-policy.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/stores/scripts/mHRbak.js",
+		"/Users/andrewburgess/local/node_test/mobile/navProtoMerge/find-a-store.m.html",
+		"/Users/andrewburgess/RailsProj/first/Gemfile",
+		"/Users/andrewburgess/RailsProj/first/config/environment.rb",
+		"/Users/andrewburgess/RailsProj/first/public/javascripts/application.js",
+		"/Users/andrewburgess/RailsProj/first/vendor/plugins/paperclip/lib/paperclip.rb",
+		"/Users/andrewburgess/RailsProj/first/config/database.yml",
+		"/Users/andrewburgess/RailsProj/first/app/views/posts/_photos.html.erb",
+		"/Users/andrewburgess/RailsProj/first/config/initializers/pc_fix_hope.rb",
+		"/Users/andrewburgess/RailsProj/first/vendor/plugins/paperclip/features/s3.feature",
+		"/Users/andrewburgess/local/node_test/mobile/stores/contact_bik.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/oneMap/index.html",
+		"/Users/andrewburgess/Desktop/marquee-05062012/index.html",
+		"/Users/andrewburgess/Library/Caches/TemporaryItems/Outlook Temp/2scene - 480 and 320/index.html",
+		"/Volumes/mobilepod/Sites/navProtoMerge/find-a-store-details.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/navProtoMerge/index.html",
+		"/Users/andrewburgess/local/node_test/mobile/navProtoMerge/coverage-viewer-form.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/navProto/login.m.html",
+		"/Users/andrewburgess/Downloads/index.html",
+		"/Users/andrewburgess/local/node_test/mobile/navProto/coverage-viewer-4g.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/navProto/index.html",
+		"/Users/andrewburgess/local/node_test/mobile/navProto/stores/index.html",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/coverage-viewer-4g.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/coverage-viewer-results.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/scripts/mapUtils.js",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/scripts/stores.html",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/scripts/jquery.xdomainajax.js",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/coverage-viewer-geo.m.html",
+		"/Users/andrewburgess/local/node_test/mobile/hardrock/coverage-viewer-form.m.html",
+		"/Users/andrewburgess/RailsProj/first/app/views/posts/_menu.html.erb",
+		"/Users/andrewburgess/RailsProj/first/app/views/posts/_editPhoto.html.erb",
+		"/Users/andrewburgess/RailsProj/first/db/schema.rb",
+		"/Users/andrewburgess/RailsProj/first/app/views/layouts/application.html.erb",
+		"/Users/andrewburgess/Desktop/Creative Site/index.html",
+		"/Users/andrewburgess/RailsProj/first/public/stylesheets/creativesite.css",
+		"/Users/andrewburgess/RailsProj/first/public/stylesheets/creativesite_bak.css",
+		"/Users/andrewburgess/RailsProj/first/public/stylesheets/creativesite_bak.bak",
+		"/Users/andrewburgess/RailsProj/first/public/stylesheets/creativesite_css.bak",
+		"/Volumes/cxt share/styleguide/includes/nav-sub-mobile.html",
+		"/Users/andrewburgess/RailsProj/first/app/views/posts/new.html.erb",
+		"/Users/andrewburgess/RailsProj/first/app/views/posts/newp.html.erb",
+		"/Users/andrewburgess/RailsProj/first/config/environments/development.rb",
+		"/Users/andrewburgess/RailsProj/first/app/views/posts/_camp.html.erb",
+		"/Applications/Sublime Text 2.app/Contents/Info.plist",
+		"/Applications/MAMP/htdocs/personal_projects/achehorn/index_bugfixed.html",
+		"/Applications/MAMP/htdocs/personal_projects/achehorn/images/content/detailImages/detail_2_big.jpg",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/User/Side Bar.sublime-settings",
+		"/Applications/MAMP/htdocs/personal_projects/achehorn/images/left.png",
+		"/Users/andrewburgess/local/node_test/mobile/candyland/raphael.html",
+		"/Users/andrewburgess/local/node_test/mobile/candyland/maze.html",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/User/jQueryJavaScript.sublime-settings",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/SublimeCodeIntel/Base File.sublime-settings",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/Default (OSX).sublime-keymap",
+		"/Users/andrewburgess/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/Side Bar.sublime-settings"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/andrewburgess/local/node_test/mobile/interimHome",
+			"/Users/andrewburgess/local/node_test/mobile/stores",
+			"/Users/andrewburgess/RailsProj/first/app",
+			"/Users/andrewburgess/RailsProj/first",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hasbg",
+			"ontouchm",
+			"assets/",
+			" restart",
+			"detectPhone",
+			"phone",
+			"getgeo",
+			"console",
+			"get",
+			"ATTNet",
+			"attnet",
+			"dcs",
+			"storesFindStoreLink",
+			"TERMS",
+			"terms",
+			"about att",
+			"about",
+			"ATTNet",
+			"attnet",
+			"ATTNet",
+			"attnet",
+			"mine",
+			"<li>",
+			"</li>",
+			"<li>",
+			"phone",
+			"Us result Pg",
+			"Contact Us result",
+			"Find store details",
+			"ATT Find",
+			"4G network",
+			"ATT 4G network Pg",
+			"ATT 4G network",
+			"ATT 4G network Pg",
+			"scrollwin",
+			"storesGetApp",
+			"include",
+			"share",
+			"/HSN/Mobile/",
+			"findastore",
+			"alert",
+			"storesSubNav",
+			"storesMainNav",
+			"homeNav",
+			"aler",
+			"forcerefresh",
+			"alert",
+			".grad",
+			"grad",
+			"alert",
+			"alert(",
+			"eat it",
+			"Contact Us",
+			"pin1",
+			"storesFindStoreLink",
+			"AN-sObj-5570",
+			"cloud",
+			"AN-sObj-5552",
+			"AN-sObj-val-5552",
+			"ani-AN-sObj-5230",
+			"ani-AN-sObj-5230; -webkit-animation-duration",
+			"storesResultsLocationLink",
+			"in storepos",
+			"instorepos",
+			"isGeo",
+			"findStoreForm",
+			"findStoreSubmit",
+			"paperclip",
+			"swf_fu",
+			"3.0.3",
+			":path",
+			"::path",
+			": path",
+			"path ",
+			" path",
+			":path",
+			"file_",
+			"path",
+			"background-im",
+			"30px",
+			"ShowPushPin",
+			"setcenter",
+			"GeocodeCallback",
+			"body",
+			"ismobile.",
+			"showErrorMsg",
+			"findStoreSubmit",
+			"li",
+			"startSceneByID",
+			"rotation",
+			"startSceneByID",
+			"draw",
+			"page",
+			"zipStore",
+			"findStoreForm",
+			"p_long",
+			"assetwrapper",
+			"assetembed",
+			"holder_content",
+			"();",
+			"11"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.git":
+	{
+		"height": 126.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 126.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"show",
+				"app/views/posts/show.html.erb"
+			],
+			[
+				"applica",
+				"config/application.rb"
+			],
+			[
+				"",
+				"app/views/posts/index.html.erb"
+			],
+			[
+				"index",
+				"app/views/posts/index.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/andrewburgess/RailsProj/litterbox/litterbox.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 267.0,
+	"status_bar_visible": true
+}
