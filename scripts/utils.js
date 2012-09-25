@@ -15,7 +15,7 @@ function initialize() {
 					var fmtDate = entry.publishedDate.substring(0, parseInt(entry.publishedDate.length-15, 10));
 					var entryImageUrl = $(entry.content).find('img').eq(0).attr('src');
 					$('#post_list').append(
-						'<li id="articeNum'+i+'"><div class="wrapper"><div class="thumb_container"><a class="thumbLink" href="'+entry.link+'"><img class="thumb" src="'+entryImageUrl+'" width="60" alt=""></a></div></div><div class="text"><span class="date" style="opacity: 1; display: block;">'+fmtDate+'</span><a class="headline" href="'+entry.link+'"><span class="headline-txt">'+entry.title+'</span></a></div><div class="clear"></div></li>'
+						'<li id="articeNum'+i+'"><div class="wrapper"><div class="thumb_container"><a class="thumbLink" target="_blank" href="'+entry.link+'"><img class="thumb" src="'+entryImageUrl+'" width="60" alt=""></a></div></div><div class="text"><span class="date" style="opacity: 1; display: block;">'+fmtDate+'</span><a class="headline" target="_blank" href="'+entry.link+'"><span class="headline-txt">'+entry.title+'</span></a></div><div class="clear"></div></li>'
 						);
 				// }
 			}
