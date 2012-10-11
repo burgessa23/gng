@@ -1,18 +1,24 @@
-// global async loader for google feed JSAPI
-google.load("feeds", "1");
+// globals for tracking load status and sorting posts
 var p_mergedPosts = [];
 var numOfLoads = 0;
 
+// load the google feed API
+google.load("feeds", "1");
+
+// check to see if we're all done loading the content, then display it
 var refreshTimer = setInterval(function() {
-				if (numOfLoads === 2) {
-					displayFeeds();
-				}
-			}, 500);
+	if(numOfLoads === 2) {
+		displayFeeds();
+	}
+}, 500);
 
-
+// get the feed content from both RSS feeds, if more are needed, add the atom urls to this array
 (function() {
 	function init() {
-		var feedURLS = ['http://www.blogger.com/feeds/6937616696067509797/posts/default?start-index=1', 'http://www.blogger.com/feeds/7373101913773587202/posts/default?start-index=1'];
+		var feedURLS = [
+				'http://www.blogger.com/feeds/6937616696067509797/posts/default?start-index=1',
+				'http://www.blogger.com/feeds/7373101913773587202/posts/default?start-index=1'
+			];
 		for(var i = 0; i < feedURLS.length; i++) {
 			loadFeed({
 				url: feedURLS[i],
@@ -46,16 +52,13 @@ var refreshTimer = setInterval(function() {
 	google.setOnLoadCallback(init);
 })();
 
-
+// display the content from both feeds by interlacing the 2 arrays together ordered by post date
 function displayFeeds () {
 	clearInterval(refreshTimer);
-	var len0 = p_mergedPosts[0].length;
-	var len1 = p_mergedPosts[1].length;
+	var len0 = p_mergedPosts[0].length, len1 = p_mergedPosts[1].length;
 	var lenToLoop = (len0 >= len1) ? len0 : len1;
 	for (var i = 0; i < lenToLoop; i++) {
-		//console.log(p_mergedPosts[0][i]);
-		//console.log(p_mergedPosts[1][i]);
-		$('#post_list').append('<div class="rssContent">' + p_mergedPosts[0][i] + '</div>');
-		$('#post_list').append('<div class="rssContent">' + p_mergedPosts[1][i] + '</div>');
+		$('#post_list').append(p_mergedPosts[0][i]);
+		$('#post_list').append(p_mergedPosts[1][i]);
 	}
 }

@@ -1,0 +1,91 @@
+/*gg css*/
+
+#main{
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+}
+
+.wrapper {
+	width: 910px;
+}
+
+body {
+	background-color: white;}
+
+a {
+	font-size: 12pt;
+	font-family: Arial;
+}
+
+h1{
+	font-family: Garamond;
+	font-size: 20pt;}
+
+h2{
+	font-family: Garamond;
+	font-size: 17pt;}
+
+.welcome {
+	float: right;
+	width: 300px;
+	border: 1px red solid;
+}
+
+.mainNav {
+	float: left;
+	width: 600px;
+	min-height: 600px;
+	border: 1px blue solid;
+}
+
+p.welcome{
+	font-family: arial;
+	font-size: 15pt;
+	text-align: left;}
+
+li{
+	display: inline;}
+
+ul.nav{
+	padding: 10px;
+	margin: 0px auto 0px auto;
+	border-top: 3px double #666666;
+	border-bottom: 3px double #666666;
+	text-align: center;}
+
+.bottomInfo {
+	padding: 15px;
+	margin: 0px 0px 0px 0px;
+	text-align: left;
+	width: 910px;
+	clear: both;
+}
+
+.bottomInfo div {
+	width: 300px;
+	border: 1px cyan solid;
+
+}
+
+a.bottominfo {
+	font-family: Garamond;
+	font-size: 14pt;
+	color: #6699cc;
+
+}
+
+.bottomNav{
+	width: 910px;
+	/* class, id, i dont know!*/
+}
+
+ul.bottomNav{
+	font-size: 12pt;
+	width: 910px;
+	padding: 10px;
+	margin: 0px auto 0px auto;
+	border-top: 3px double #666666;
+	border-bottom: 3px double #666666;
+	text-align: center;
+}
