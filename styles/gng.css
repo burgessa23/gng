@@ -1,3 +1,4 @@
+/*gg css*/
 p {
 	font-family: sans-serif;
 	font-size: 13px;
@@ -7,20 +8,24 @@ p {
 	font-size: 13px;	
 }
 a .headline-txt, .headline {
-	font-style: italic;
-	font-family: Didot;
-	color: #585858;
-	font-size: 20px;
-	font-weight: 600;
+	font-family: Garamond;
+	color: #989898;
+	font-size: 18px;
+	font-weight: 400;
 	text-decoration: none;
+}
+.postBody {
+	font-family: Arial;
+	font-size: 12px;
 }
 .date {
 	color: #cccccc;
 	font-size: 11px;
 	font-family: sans-serif;
 }
-ul {
+#feedWrapper ul {
 	list-style: none;
+	padding-left: 2px;
 }
 #post_list li {
 	position: relative;
@@ -38,10 +43,105 @@ ul {
 	display: block;
 }
 #post_list li .text {
-	padding-left: 93px;
+	padding-left: 8px;
+	width: 285px;
 }
 #feedWrapper {
 	right: 0;
 	top: 0;
 	width: 300px;
+	height: 250px;
+	overflow: auto;
+}
+
+#main{
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+}
+
+.wrapper {
+	width: 910px;
+}
+
+body {
+	background-color: white;}
+
+a {
+	font-size: 12pt;
+	font-family: Arial;
+}
+
+h1{
+	font-family: Garamond;
+	font-size: 20px;}
+
+h2{
+	font-family: Garamond;
+	font-size: 17px;}
+
+.welcome {
+	float: right;
+	width: 300px;
+	border: 1px red solid;
+}
+
+.mainNav {
+	float: left;
+	width: 600px;
+	min-height: 600px;
+	border: 1px blue solid;
+}
+
+.welcome p{
+	font-family: arial;
+	font-size: 15px;
+	text-align: left;
+	padding: 10px;
+}
+
+li{
+	display: inline;}
+
+ul.nav{
+	padding: 10px;
+	margin: 0px auto 0px auto;
+	border-top: 3px double #666666;
+	border-bottom: 3px double #666666;
+	text-align: center;}
+
+.bottomInfo {
+	padding: 15px;
+	margin: 0px 0px 0px 0px;
+	text-align: left;
+	width: 910px;
+	clear: both;
+}
+
+.bottomInfo div {
+	width: 300px;
+	border: 1px cyan solid;
+
+}
+
+a.bottominfo {
+	font-family: Garamond;
+	font-size: 14pt;
+	color: #6699cc;
+
+}
+
+.bottomNav{
+	width: 910px;
+	/* class, id, i dont know!*/
+}
+
+ul.bottomNav{
+	font-size: 12pt;
+	width: 910px;
+	padding: 10px;
+	margin: 0px auto 0px auto;
+	border-top: 3px double #666666;
+	border-bottom: 3px double #666666;
+	text-align: center;
 }
