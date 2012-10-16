@@ -1,7 +1,7 @@
 // globals for tracking load status and sorting posts
 var p_mergedPosts = [];
 var numOfLoads = 0;
-var pageFlag;
+var pageFlag = '';
 
 // load the google feed API
 google.load("feeds", "1");
@@ -61,6 +61,7 @@ var refreshTimer = setInterval(function() {
 // get the feed content from both RSS feeds, if more are needed, add the atom urls to this array
 function getBlogRolls () {
 	(function() {
+		// get the blog posts
 		function init() {
 			var feedURLS = [
 					'http://www.blogger.com/feeds/6937616696067509797/posts/default?start-index=1',
@@ -127,6 +128,7 @@ function getBlogRolls () {
 				numOfLoads++;
 			});
 		}
+		// when the google feed API is loaded, run the blog engine
 		google.setOnLoadCallback(init);
 	})();
 }
