@@ -15,38 +15,38 @@ jQuery(document).ready(function() {
 	}
 	// animation stuff for the image nav section
 	$('#servicesNavItem').bind('mouseenter', function() {
-		$('#servicesFloat').animate({'top': '475px'}, 300);
+		$('#servicesFloat').animate({'top': '295px'}, 300);
 		$('#servicesDetail').show(300);
 	});
 	$('#servicesNavItem').bind('mouseleave', function() {
-		$('#servicesFloat').animate({'top': '535px'}, 300);
+		$('#servicesFloat').animate({'top': '355px'}, 300);
 		$('#servicesDetail').hide(300);
 	});
 
 	$('#blogNavItem').bind('mouseenter', function() {
-		$('#blogFloat').animate({'top': '285px'}, 300);
+		$('#blogFloat').animate({'top': '105px'}, 300);
 		$('#blogDetail').show(300);
 	});
 	$('#blogNavItem').bind('mouseleave', function() {
-		$('#blogFloat').animate({'top': '345px'}, 300);
+		$('#blogFloat').animate({'top': '165px'}, 300);
 		$('#blogDetail').hide(300);
 	});
 
 	$('#contactNavItem').bind('mouseenter', function() {
-		$('#contactFloat').animate({'top': '670px'}, 300);
+		$('#contactFloat').animate({'top': '490px'}, 300);
 		$('#contactDetail').show(300);
 	});
 	$('#contactNavItem').bind('mouseleave', function() {
-		$('#contactFloat').animate({'top': '730px'}, 300);
+		$('#contactFloat').animate({'top': '550px'}, 300);
 		$('#contactDetail').hide(300);
 	});
 
 	$('#aboutNavItem').bind('mouseenter', function() {
-		$('#aboutFloat').animate({'top': '670px'}, 300);
+		$('#aboutFloat').animate({'top': '490px'}, 300);
 		$('#aboutDetail').show(300);
 	});
 	$('#aboutNavItem').bind('mouseleave', function() {
-		$('#aboutFloat').animate({'top': '730px'}, 300);
+		$('#aboutFloat').animate({'top': '550px'}, 300);
 		$('#aboutDetail').hide(300);
 	});
 });

@@ -111,7 +111,10 @@ p {
 }
 
 body {
-	background-color: white;}
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+}
 
 .floatTxt {
 	background-color: #333;
