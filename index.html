@@ -11,23 +11,47 @@
 <body>
 		<div id="main">
 		<div class="header">
-			<img src="ggHeader.jpg" />
+			<img id="tpBanner" src="" />
 			<!-- this will be a rotating image -->
-			<img src="ggLogo.png" />
+			<img src="images/logo.png" style="position:absolute;top:20px;left:20px;"/>
 		</div>
 		<div class="wrapper">
 			<div class="nav">
 				<ul>
-					<li>HOME</li>
-					<li>SERVICES</li>
-					<li>ABOUT</li>
-					<li>CONTACT</li>
-					<li>BLOG</li>
-					<li>GALLERY</li>
+					<li class="selectedNav">HOME</li>
+					<li> / </li>
+					<li> <a href="services.html">SERVICES</a></li>
+					<li> / </li>
+					<li> <a href="about.html">ABOUT</a></li>
+					<li> / </li>
+					<li> <a href="contact.html">CONTACT</a></li>
+					<li> / </li>
+					<li> <a href="blog.html">BLOG</a></li>
+				</ul>
+				<ul style="margin-top: -4px;">
 				</ul>
 			</div>
 			<div class="mainNav">
-				<!-- This will be th elarge images with the roll over animation -->
+				<div style="float:left; width: 285px;">
+					<a href="services.html"><img src=""height="360" width="280" alt="" id="servicesNavItem"></a>
+					<div id="servicesFloat" class="floatTxt" style="left: 40px; top: 490px;">
+						Services<p id="servicesDetail" style="display:none;">A firm created exclusively<br/>for fashion industry clients</p>
+					</div>
+					<a href="contact.html"><img src="images/contact.jpg" height="170" width="280" alt=""></a>
+					<div id="contactFloat" class="floatTxt" style="left: 40px; top: 739px;">
+						Contact
+					</div>
+				</div>
+				<div style="float:right; width: 285px;">
+					<a href="blog.html"><img src="images/blog.jpg" height="170" width="280" alt=""></a>
+					<div id="blogFloat" class="floatTxt" style="left: 357px; top: 357px;">
+						Blog
+					</div>
+					<a href="about.html"><img src="images/about.jpg" height="360" width="280" alt=""></a>
+					<div id="aboutFloat" class="floatTxt" style="left: 357px; top: 739px;">
+						About
+					</div>
+				</div>
 			</div>
 			<div class="welcome">
 				<h1>WELCOME</h1>
@@ -47,14 +71,22 @@
 							successfully navigate the fashion industry 
 							with style and grace.
 				</p>
-				<h2>GALLERY</h2>
-				<!-- images go here for the gallery, should this be a seperate div -->
-				<a href="">Find more on Somesite</a>
-				<h2>TWITTER</h2>
-				<!-- images go here for the , should this be a seperate div -->
-				<img src=".png" />
-				<img src=".png" />
-				<img src=".png" />
+				<!-- <h2>GALLERY</h2>
+				images go here for the gallery, should this be a seperate div
+				<a href="">Find more on Somesite</a> -->
+				<h2>CONNECT</h2>
+				<div style="padding-left: 65px;">
+					<img src="images/fbicon.png" />
+					<img src="images/twittericon.png" />
+					<img src="images/linkinicon.png" />
+					<img src="images/icons.png" />
+				</div>
+				<h2>AFFLIATED PAGES</h2>
+				<p id="affiliates">
+					<a href="">Sydney Loves Fashion</a><br/>
+					<a href="">Seattle Boutique Blogspot</a>
+				</p>
+				<h2>OTHER FASHION SITES</h2>
 			</div>
 			<div class="bottomInfo">
 				<div style="float:left;">
@@ -64,25 +96,37 @@
 					</div>
 				</div>
 				<div style="float:left;">
-					<h2>TWITTER</h2>
-				</div>
-				<div style="float:right;">
-					<h2>AFFLIATED PAGES</h2>
-					<h2>OTHER FASHIONS SITES</h2>
+					<h2>GOSSIP&GLAMOUR TWITTER</h2>
+					<div id="feedWrapper">
+						<ul id="tweet_list"></ul>
+					</div>
 				</div>
 			</div>
 			<div style="clear:both;"></div>
 			<div class="bottomNav">
 				<ul>
-					<li>HOME</li>
-					<li>SERVICES</li>
-					<li>ABOUT</li>
-					<li>CONTACT</li>
-					<li>BLOG</li>
-					<li>GALLERY</li>
+					<li>HOME /</li>
+					<li> <a href="services.html">SERVICES</a> /</li>
+					<li> <a href="about.html">ABOUT</a> /</li>
+					<li> <a href="contact.html">CONTACT</a> /</li>
+					<li> <a href="blog.html">BLOG</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			getBlogRolls();
+			var myFeed = new FeedPuller('sydlovesfashion');
+		});
+
+		$('#servicesNavItem').bind('mouseover', function() {
+			$('#servicesDetail').show(300);
+		});
+		$('#servicesNavItem').bind('mouseout', function() {
+			$('#servicesDetail').hide(300);
+		});
+
+	</script>
 </body>
 </html>

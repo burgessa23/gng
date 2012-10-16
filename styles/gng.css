@@ -7,14 +7,14 @@ p {
 	font-family: sans-serif;
 	font-size: 13px;	
 }
-a .headline-txt, .headline {
-	font-family: Garamond;
-	color: #989898;
-	font-size: 18px;
+.headline-txt a, .headline {
+	font-family: Arial;
+	color: #EEE;
+	font-size: 12px;
 	font-weight: 400;
 	text-decoration: none;
 }
-.postBody {
+.postBody, .headline-txt {
 	font-family: Arial;
 	font-size: 12px;
 }
@@ -26,8 +26,11 @@ a .headline-txt, .headline {
 #feedWrapper ul {
 	list-style: none;
 	padding-left: 2px;
+	margin-top: 0px;
+	height: 250px;
+	overflow: auto;
 }
-#post_list li {
+#post_list li, #tweet_list li {
 	position: relative;
 	width: 300px;
 	margin: 0 auto;
@@ -42,7 +45,7 @@ a .headline-txt, .headline {
 	margin: 3px 13px 3px 0;
 	display: block;
 }
-#post_list li .text {
+#post_list li .text, #tweet_list li .text {
 	padding-left: 8px;
 	width: 285px;
 }
@@ -50,68 +53,144 @@ a .headline-txt, .headline {
 	right: 0;
 	top: 0;
 	width: 300px;
-	height: 250px;
-	overflow: auto;
+	height: 270px;
+	overflow: hidden;
 }
 
 #main{
 	margin: 0 auto;
 	position: relative;
-	width: 1000px;
+	width: 1024px;
+}
+
+.selectedNav {
+
+	border-bottom: 7px solid #999;
 }
 
 .wrapper {
 	width: 910px;
+	margin: 0 auto;
 }
 
 body {
 	background-color: white;}
 
-a {
-	font-size: 12pt;
+.floatTxt {
+	background-color: #333;
+	color: #FFF;
+	font-family: Garamond;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 24px;
+	letter-spacing: 3px;
+	position: absolute;
+	width: 250px;
+	padding: 10px;
+}
+
+.floatTxt p {
 	font-family: Arial;
+	font-size: 16px;
+	letter-spacing: 0px;
+	margin-top: 8px;
+}
+
+.profilePic .floatTxt {
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.servicesContent h2 {
+	border-bottom: none;
+}
+
+.servicesContent p {
+	margin-top: -14px;
 }
 
 h1{
 	font-family: Garamond;
-	font-size: 20px;}
+	font-weight: 400;
+	font-size: 20px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #EEE;
+	letter-spacing: 2px;
+}
+
+#affiliates a {
+	color: #666;
+	font-style: italic;
+}
 
 h2{
 	font-family: Garamond;
-	font-size: 17px;}
+	font-size: 17px;
+	font-weight: 400;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #EEE;
+	letter-spacing: 2px;
+}
 
 .welcome {
 	float: right;
-	width: 300px;
-	border: 1px red solid;
+	width: 290px;
+	padding: 10px 0 10px 10px;
 }
 
 .mainNav {
 	float: left;
 	width: 600px;
-	min-height: 600px;
-	border: 1px blue solid;
+	padding-bottom: 10px;
+	border-bottom: 3px double #999;
+}
+
+.mainNav div img {
+	padding-right: 20px;
+	padding-top: 20px;
 }
 
 .welcome p{
 	font-family: arial;
 	font-size: 15px;
 	text-align: left;
-	padding: 10px;
+	
+}
+
+.profilePic {
+	width: 280px;
+	min-height: 360px;
+	margin-top: 15px;
+	float: left;
 }
 
 li{
 	display: inline;}
 
-ul.nav{
-	padding: 10px;
-	margin: 0px auto 0px auto;
-	border-top: 3px double #666666;
-	border-bottom: 3px double #666666;
-	text-align: center;}
+
+
+.nav ul, .bottomNav ul{
+	padding: 10px 10px 0 10px;
+	margin: 0 auto;
+	font-size: 20px;
+	position: relative;
+	border-bottom: 1px solid #999;
+	text-align: center;
+	color: #666;
+	letter-spacing: 3px;
+}
+
+.nav ul a, .bottomNav ul a {
+	color: #666;
+	text-decoration: none;
+}
+
+.bottomNav ul {
+	border-top: 3px double #999;
+}
 
 .bottomInfo {
-	padding: 15px;
+	padding: 0 15px 15px 15px;
 	margin: 0px 0px 0px 0px;
 	text-align: left;
 	width: 910px;
@@ -120,7 +199,7 @@ ul.nav{
 
 .bottomInfo div {
 	width: 300px;
-	border: 1px cyan solid;
+	/*border: 1px cyan solid;*/
 
 }
 
@@ -128,6 +207,7 @@ a.bottominfo {
 	font-family: Garamond;
 	font-size: 14pt;
 	color: #6699cc;
+	letter-spacing: 2px;
 
 }
 
@@ -136,12 +216,12 @@ a.bottominfo {
 	/* class, id, i dont know!*/
 }
 
-ul.bottomNav{
+.bottomNav ul{
 	font-size: 12pt;
 	width: 910px;
 	padding: 10px;
 	margin: 0px auto 0px auto;
-	border-top: 3px double #666666;
-	border-bottom: 3px double #666666;
+	border-top: 3px double #999;
+	border-bottom: 3px double #999;
 	text-align: center;
 }
