@@ -9,12 +9,10 @@ google.load("feeds", "1");
 // do as soon as the box model is sorted in memory
 jQuery(document).ready(function() {
 	headerImageRandomizer();
-	if (pageFlag === 'home') {
-		getBlogRollsHome();
-	} else if(pageFlag === 'blog') {
-		getBlogRollsBlog();
+	if (pageFlag === 'home' || pageFlag === 'blog') {
+		getBlogRolls();
+		var myFeed = new FeedPuller('sydlovesfashion');
 	}
-	var myFeed = new FeedPuller('sydlovesfashion');
 	// animation stuff for the image nav section
 	$('#servicesNavItem').bind('mouseenter', function() {
 		$('#servicesFloat').animate({'top': '475px'}, 300);
@@ -61,7 +59,7 @@ var refreshTimer = setInterval(function() {
 }, 500);
 
 // get the feed content from both RSS feeds, if more are needed, add the atom urls to this array
-function getBlogRollsHome () {
+function getBlogRolls () {
 	(function() {
 		function init() {
 			var feedURLS = [
@@ -69,15 +67,46 @@ function getBlogRollsHome () {
 					'http://www.blogger.com/feeds/7373101913773587202/posts/default?start-index=1'
 				];
 			for(var i = 0; i < feedURLS.length; i++) {
-				loadFeed({
-					url: feedURLS[i],
-					divId: 'feed',
-					noOfFeed: 10
-				});
+				if (pageFlag === 'home') {
+					loadFeedHomePage({
+						url: feedURLS[i],
+						divId: 'feed',
+						noOfFeed: 5
+					});
+				} else if(pageFlag === 'blog') {
+					loadFeedBlogPage({
+						url: feedURLS[i],
+						divId: 'feed',
+						noOfFeed: 5
+					});
+				}
 			}
 		}
+		// blog post display engine for homepage
+		function loadFeedBlogPage(opt_options) {
+			var p_perBlogPosts = [];
+			var feed = new google.feeds.Feed(opt_options.url);
+			feed.setNumEntries(opt_options.noOfFeed);
+			feed.load(function(result) {
+				if(!result.error) {
+					var feeddiv = $('#' + opt_options.divId),
+						li = '<li>' + result.feed.link + '</li>',
+						divOne = '';
+					$('#vtab ul').append(li);
+					for(var i = 0; i < result.feed.entries.length; i++) {
+						var entry = result.feed.entries[i];
+						var fmtDate = entry.publishedDate.substring(0, parseInt(entry.publishedDate.length - 15, 10));
+						var entryImageUrl = $(entry.content).find('img').eq(0).attr('src');
+						p_perBlogPosts.push('<li id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + entry.title + '</span></a><br/><span class="postBody">'+ entry.content +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
+					}
+				}
+				p_mergedPosts.push(p_perBlogPosts);
+				numOfLoads++;
+			});
+		}
 
-		function loadFeed(opt_options) {
+		// blog post display engine for blog page
+		function loadFeedHomePage(opt_options) {
 			var p_perBlogPosts = [];
 			var feed = new google.feeds.Feed(opt_options.url);
 			feed.setNumEntries(opt_options.noOfFeed);
@@ -102,48 +131,6 @@ function getBlogRollsHome () {
 	})();
 }
 
-// get the feed content from both RSS feeds, if more are needed, add the atom urls to this array
-function getBlogRollsBlog () {
-	(function() {
-		function init() {
-			var feedURLS = [
-					'http://www.blogger.com/feeds/6937616696067509797/posts/default?start-index=1',
-					'http://www.blogger.com/feeds/7373101913773587202/posts/default?start-index=1'
-				];
-			for(var i = 0; i < feedURLS.length; i++) {
-				loadFeed({
-					url: feedURLS[i],
-					divId: 'feed',
-					noOfFeed: 5
-				});
-			}
-		}
-
-		function loadFeed(opt_options) {
-			var p_perBlogPosts = [];
-			var feed = new google.feeds.Feed(opt_options.url);
-			feed.setNumEntries(opt_options.noOfFeed);
-			feed.load(function(result) {
-				if(!result.error) {
-					var feeddiv = $('#' + opt_options.divId),
-						li = '<li>' + result.feed.link + '</li>',
-						divOne = '';
-					$('#vtab ul').append(li);
-					for(var i = 0; i < result.feed.entries.length; i++) {
-						var entry = result.feed.entries[i];
-						var fmtDate = entry.publishedDate.substring(0, parseInt(entry.publishedDate.length - 15, 10));
-						var entryImageUrl = $(entry.content).find('img').eq(0).attr('src');
-						p_perBlogPosts.push('<li id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + entry.title + '</span></a><br/><span class="postBody">'+ entry.content +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
-					}
-				}
-				p_mergedPosts.push(p_perBlogPosts);
-				numOfLoads++;
-			});
-		}
-		google.setOnLoadCallback(init);
-	})();
-}
-
 // display the content from both feeds by interlacing the 2 arrays together ordered by post date
 function displayFeeds () {
 	clearInterval(refreshTimer);
@@ -155,8 +142,8 @@ function displayFeeds () {
 	}
 }
 
+// twitter fetcher/parser
 function FeedPuller (searchStr) {
-
 	var userVisitTime = new Date();
 	var userVisitStamp = userVisitTime.getTime();
 	var runCount = 0;
@@ -225,6 +212,7 @@ function FeedPuller (searchStr) {
 	callRestService();
 }
 
+// random header backgrounds
 function headerImageRandomizer () {
 	var randomnumber=Math.floor(Math.random()*3);
 	$('#tpBanner').attr('src', 'images/topBanner00'+randomnumber+'.jpg');
