@@ -28,7 +28,8 @@ p {
 	padding-left: 2px;
 	margin-top: 0px;
 	height: 250px;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 #post_list li, #tweet_list li {
 	position: relative;
@@ -55,6 +56,34 @@ p {
 	width: 300px;
 	height: 270px;
 	overflow: hidden;
+}
+
+#feedWrapperBlog {
+	right: 0;
+	top: 0;
+	width: 580px;
+}
+
+#feedWrapperBlog ul {
+	list-style: none;
+	padding-left: 2px;
+	margin-top: 0px;
+}
+
+#feedWrapperBlog #post_list li {
+	position: relative;
+	width: 580px;
+	margin: 0 auto;
+	padding: .75em 0;
+	overflow: hidden;
+	border-bottom: 1px solid #EEE;
+	font-size: 100%;
+	line-height: 1.4;
+}
+
+#feedWrapperBlog #post_list li .text {
+	padding-left: 8px;
+	width: 580px;
 }
 
 #main{

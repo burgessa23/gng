@@ -32,21 +32,22 @@
 				</ul>
 			</div>
 			<div class="mainNav">
-				<div id="feedWrapper">
+				<div id="feedWrapperBlog">
 					<ul id="post_list"></ul>
 				</div>
 			</div>
 			<div class="welcome">
 				<h2>CONNECT</h2>
-				<!-- images go here for the , should this be a seperate div -->
-				<img src="images/fbicon.png" />
-				<img src="images/twittericon.png" />
-				<img src="images/linkinicon.png" />
-				<img src="images/icons.png" />
+				<div style="padding-left: 65px;">
+					<img class="socialLink" src="images/fbIcon.png" />
+					<img class="socialLink" src="images/twitterIcon.png" />
+					<img class="socialLink" src="images/linkinIcon.png" />
+					<img class="socialLink" src="images/icons.png" />
+				</div>
 				<h2>AFFLIATED PAGES</h2>
-					<p>
-						<a href="">Sydney Loves Fashion</a><br/>
-						<a href="">Seattle Boutique Blogspot</a>
+					<p id="affiliates">
+						<a href="http://www.sydneylovesfashion.com/">Sydney Loves Fashion</a><br/>
+						<a href="http://www.seattleboutiqueblogspot.com/">Seattle Boutique Blogspot</a>
 					</p>
 					<h2>OTHER FASHIONS SITES</h2>
 				<h2>GOSSIP&GLAMOUR TWITTER</h2>
@@ -68,10 +69,7 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		jQuery(document).ready(function() {
-			getBlogRolls();
-			var myFeed = new FeedPuller('sydlovesfashion');
-		});
+		
 	</script>
 </body>
 </html>

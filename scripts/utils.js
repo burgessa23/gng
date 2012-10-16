@@ -1,14 +1,52 @@
 // globals for tracking load status and sorting posts
-jQuery(document).ready(function() {
-	headerImageRandomizer();
-});
-
-
 var p_mergedPosts = [];
 var numOfLoads = 0;
 
 // load the google feed API
 google.load("feeds", "1");
+
+// do as soon as the box model is sorted in memory
+jQuery(document).ready(function() {
+	headerImageRandomizer();
+	getBlogRolls();
+	var myFeed = new FeedPuller('sydlovesfashion');
+	// animation stuff for the image nav section
+	$('#servicesNavItem').bind('mouseenter', function() {
+		$('#servicesFloat').animate({'top': '475px'}, 300);
+		$('#servicesDetail').show(300);
+	});
+	$('#servicesNavItem').bind('mouseleave', function() {
+		$('#servicesFloat').animate({'top': '535px'}, 300);
+		$('#servicesDetail').hide(300);
+	});
+
+	$('#blogNavItem').bind('mouseenter', function() {
+		$('#blogFloat').animate({'top': '285px'}, 300);
+		$('#blogDetail').show(300);
+	});
+	$('#blogNavItem').bind('mouseleave', function() {
+		$('#blogFloat').animate({'top': '345px'}, 300);
+		$('#blogDetail').hide(300);
+	});
+
+	$('#contactNavItem').bind('mouseenter', function() {
+		$('#contactFloat').animate({'top': '670px'}, 300);
+		$('#contactDetail').show(300);
+	});
+	$('#contactNavItem').bind('mouseleave', function() {
+		$('#contactFloat').animate({'top': '730px'}, 300);
+		$('#contactDetail').hide(300);
+	});
+
+	$('#aboutNavItem').bind('mouseenter', function() {
+		$('#aboutFloat').animate({'top': '670px'}, 300);
+		$('#aboutDetail').show(300);
+	});
+	$('#aboutNavItem').bind('mouseleave', function() {
+		$('#aboutFloat').animate({'top': '730px'}, 300);
+		$('#aboutDetail').hide(300);
+	});
+});
 
 // check to see if we're all done loading the content, then display it
 var refreshTimer = setInterval(function() {
@@ -143,6 +181,5 @@ function FeedPuller (searchStr) {
 
 function headerImageRandomizer () {
 	var randomnumber=Math.floor(Math.random()*3);
-	console.log(randomnumber);
 	$('#tpBanner').attr('src', 'images/topBanner00'+randomnumber+'.jpg');
 }
