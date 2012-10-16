@@ -37,19 +37,19 @@
 					<div id="servicesFloat" class="floatTxt" style="left: 40px; top: 490px;">
 						Services<p id="servicesDetail" style="display:none;">A firm created exclusively<br/>for fashion industry clients</p>
 					</div>
-					<a href="contact.html"><img src="images/contact.jpg" height="170" width="280" alt=""></a>
-					<div id="contactFloat" class="floatTxt" style="left: 40px; top: 739px;">
-						Contact
+					<a href="contact.html"><img src="images/contact.jpg" height="170" width="280" alt="" id="contactNavItem"></a>
+					<div id="contactFloat" class="floatTxt" style="left: 40px; top: 680px;">
+						Contact<p id="contactDetail" style="display:none;">Here is some text<br/>and some more text</p>
 					</div>
 				</div>
 				<div style="float:right; width: 285px;">
-					<a href="blog.html"><img src="images/blog.jpg" height="170" width="280" alt=""></a>
-					<div id="blogFloat" class="floatTxt" style="left: 357px; top: 357px;">
-						Blog
+					<a href="blog.html"><img src="images/blog.jpg" height="170" width="280" alt="" id="blogNavItem"></a>
+					<div id="blogFloat" class="floatTxt" style="left: 357px; top: 298px;">
+						Blog<p id="blogDetail" style="display:none;">Here is some text<br/>Here is some text</p>
 					</div>
-					<a href="about.html"><img src="images/about.jpg" height="360" width="280" alt=""></a>
-					<div id="aboutFloat" class="floatTxt" style="left: 357px; top: 739px;">
-						About
+					<a href="about.html"><img src="images/about.jpg" height="360" width="280" alt="" id="aboutNavItem"></a>
+					<div id="aboutFloat" class="floatTxt" style="left: 357px; top: 680px;">
+						About<p id="aboutDetail" style="display:none;">Blurb goes here<br/>and also here</p>
 					</div>
 				</div>
 			</div>
@@ -125,6 +125,27 @@
 		});
 		$('#servicesNavItem').bind('mouseout', function() {
 			$('#servicesDetail').hide(300);
+		});
+
+		$('#blogNavItem').bind('mouseover', function() {
+			$('#blogDetail').show(300);
+		});
+		$('#blogNavItem').bind('mouseout', function() {
+			$('#blogDetail').hide(300);
+		});
+
+		$('#contactNavItem').bind('mouseover', function() {
+			$('#contactDetail').show(300);
+		});
+		$('#contactNavItem').bind('mouseout', function() {
+			$('#contactDetail').hide(300);
+		});
+
+		$('#aboutNavItem').bind('mouseover', function() {
+			$('#aboutDetail').show(300);
+		});
+		$('#aboutNavItem').bind('mouseout', function() {
+			$('#aboutDetail').hide(300);
 		});
 
 	</script>
