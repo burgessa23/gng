@@ -35,13 +35,13 @@
 				<div style="float:left; width: 285px;">
 					<div id="servicesNavItem">
 						<a href="services.html"><img src=""height="360" width="280" alt="" ></a>
-						<div id="servicesFloat" class="floatTxt" style="left: 40px; top: 490px;">
+						<div id="servicesFloat" class="floatTxt" style="left: 40px; top: 535px;">
 							Services<p id="servicesDetail" style="display:none;">A firm created exclusively<br/>for fashion industry clients</p>
 						</div>
 					</div>
 					<div id="contactNavItem">
 						<a href="contact.html"><img src="images/contact.jpg" height="170" width="280" alt=""></a>
-						<div id="contactFloat" class="floatTxt" style="left: 40px; top: 680px;">
+						<div id="contactFloat" class="floatTxt" style="left: 40px; top: 730px;">
 							Contact<p id="contactDetail" style="display:none;">Here is some text<br/>and some more text</p>
 						</div>
 					</div>
@@ -49,13 +49,13 @@
 				<div style="float:right; width: 285px;">
 					<div id="blogNavItem">
 						<a href="blog.html"><img src="images/blog.jpg" height="170" width="280" alt=""></a>
-						<div id="blogFloat" class="floatTxt" style="left: 357px; top: 298px;">
+						<div id="blogFloat" class="floatTxt" style="left: 357px; top: 345px;">
 							Blog<p id="blogDetail" style="display:none;">Here is some text<br/>Here is some text</p>
 						</div>
 					</div>
 					<div id="aboutNavItem">
 						<a href="about.html"><img src="images/about.jpg" height="360" width="280" alt="" id="aboutNavItem"></a>
-						<div id="aboutFloat" class="floatTxt" style="left: 357px; top: 680px;">
+						<div id="aboutFloat" class="floatTxt" style="left: 357px; top: 730px;">
 							About<p id="aboutDetail" style="display:none;">Blurb goes here<br/>and also here</p>
 						</div>
 					</div>
@@ -129,30 +129,38 @@
 		});
 
 		$('#servicesNavItem').bind('mouseenter', function() {
+			$('#servicesFloat').animate({'top': '475px'}, 300);
 			$('#servicesDetail').show(300);
 		});
 		$('#servicesNavItem').bind('mouseleave', function() {
+			$('#servicesFloat').animate({'top': '535px'}, 300);
 			$('#servicesDetail').hide(300);
 		});
 
 		$('#blogNavItem').bind('mouseenter', function() {
+			$('#blogFloat').animate({'top': '285px'}, 300);
 			$('#blogDetail').show(300);
 		});
 		$('#blogNavItem').bind('mouseleave', function() {
+			$('#blogFloat').animate({'top': '345px'}, 300);
 			$('#blogDetail').hide(300);
 		});
 
 		$('#contactNavItem').bind('mouseenter', function() {
+			$('#contactFloat').animate({'top': '670px'}, 300);
 			$('#contactDetail').show(300);
 		});
 		$('#contactNavItem').bind('mouseleave', function() {
+			$('#contactFloat').animate({'top': '730px'}, 300);
 			$('#contactDetail').hide(300);
 		});
 
 		$('#aboutNavItem').bind('mouseenter', function() {
+			$('#aboutFloat').animate({'top': '670px'}, 300);
 			$('#aboutDetail').show(300);
 		});
 		$('#aboutNavItem').bind('mouseleave', function() {
+			$('#aboutFloat').animate({'top': '730px'}, 300);
 			$('#aboutDetail').hide(300);
 		});
 
