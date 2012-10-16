@@ -157,6 +157,11 @@ h2{
 	
 }
 
+.socialLink:hover {
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+
 .profilePic {
 	width: 280px;
 	min-height: 360px;

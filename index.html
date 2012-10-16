@@ -33,23 +33,31 @@
 			</div>
 			<div class="mainNav">
 				<div style="float:left; width: 285px;">
-					<a href="services.html"><img src=""height="360" width="280" alt="" id="servicesNavItem"></a>
-					<div id="servicesFloat" class="floatTxt" style="left: 40px; top: 490px;">
-						Services<p id="servicesDetail" style="display:none;">A firm created exclusively<br/>for fashion industry clients</p>
+					<div id="servicesNavItem">
+						<a href="services.html"><img src=""height="360" width="280" alt="" ></a>
+						<div id="servicesFloat" class="floatTxt" style="left: 40px; top: 490px;">
+							Services<p id="servicesDetail" style="display:none;">A firm created exclusively<br/>for fashion industry clients</p>
+						</div>
 					</div>
-					<a href="contact.html"><img src="images/contact.jpg" height="170" width="280" alt="" id="contactNavItem"></a>
-					<div id="contactFloat" class="floatTxt" style="left: 40px; top: 680px;">
-						Contact<p id="contactDetail" style="display:none;">Here is some text<br/>and some more text</p>
+					<div id="contactNavItem">
+						<a href="contact.html"><img src="images/contact.jpg" height="170" width="280" alt=""></a>
+						<div id="contactFloat" class="floatTxt" style="left: 40px; top: 680px;">
+							Contact<p id="contactDetail" style="display:none;">Here is some text<br/>and some more text</p>
+						</div>
 					</div>
 				</div>
 				<div style="float:right; width: 285px;">
-					<a href="blog.html"><img src="images/blog.jpg" height="170" width="280" alt="" id="blogNavItem"></a>
-					<div id="blogFloat" class="floatTxt" style="left: 357px; top: 298px;">
-						Blog<p id="blogDetail" style="display:none;">Here is some text<br/>Here is some text</p>
+					<div id="blogNavItem">
+						<a href="blog.html"><img src="images/blog.jpg" height="170" width="280" alt=""></a>
+						<div id="blogFloat" class="floatTxt" style="left: 357px; top: 298px;">
+							Blog<p id="blogDetail" style="display:none;">Here is some text<br/>Here is some text</p>
+						</div>
 					</div>
-					<a href="about.html"><img src="images/about.jpg" height="360" width="280" alt="" id="aboutNavItem"></a>
-					<div id="aboutFloat" class="floatTxt" style="left: 357px; top: 680px;">
-						About<p id="aboutDetail" style="display:none;">Blurb goes here<br/>and also here</p>
+					<div id="aboutNavItem">
+						<a href="about.html"><img src="images/about.jpg" height="360" width="280" alt="" id="aboutNavItem"></a>
+						<div id="aboutFloat" class="floatTxt" style="left: 357px; top: 680px;">
+							About<p id="aboutDetail" style="display:none;">Blurb goes here<br/>and also here</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -76,10 +84,10 @@
 				<a href="">Find more on Somesite</a> -->
 				<h2>CONNECT</h2>
 				<div style="padding-left: 65px;">
-					<img src="images/fbicon.png" />
-					<img src="images/twittericon.png" />
-					<img src="images/linkinicon.png" />
-					<img src="images/icons.png" />
+					<img class="socialLink" src="images/fbIcon.png" />
+					<img class="socialLink" src="images/twitterIcon.png" />
+					<img class="socialLink" src="images/linkinIcon.png" />
+					<img class="socialLink" src="images/icons.png" />
 				</div>
 				<h2>AFFLIATED PAGES</h2>
 				<p id="affiliates">
@@ -120,31 +128,31 @@
 			var myFeed = new FeedPuller('sydlovesfashion');
 		});
 
-		$('#servicesNavItem').bind('mouseover', function() {
+		$('#servicesNavItem').bind('mouseenter', function() {
 			$('#servicesDetail').show(300);
 		});
-		$('#servicesNavItem').bind('mouseout', function() {
+		$('#servicesNavItem').bind('mouseleave', function() {
 			$('#servicesDetail').hide(300);
 		});
 
-		$('#blogNavItem').bind('mouseover', function() {
+		$('#blogNavItem').bind('mouseenter', function() {
 			$('#blogDetail').show(300);
 		});
-		$('#blogNavItem').bind('mouseout', function() {
+		$('#blogNavItem').bind('mouseleave', function() {
 			$('#blogDetail').hide(300);
 		});
 
-		$('#contactNavItem').bind('mouseover', function() {
+		$('#contactNavItem').bind('mouseenter', function() {
 			$('#contactDetail').show(300);
 		});
-		$('#contactNavItem').bind('mouseout', function() {
+		$('#contactNavItem').bind('mouseleave', function() {
 			$('#contactDetail').hide(300);
 		});
 
-		$('#aboutNavItem').bind('mouseover', function() {
+		$('#aboutNavItem').bind('mouseenter', function() {
 			$('#aboutDetail').show(300);
 		});
-		$('#aboutNavItem').bind('mouseout', function() {
+		$('#aboutNavItem').bind('mouseleave', function() {
 			$('#aboutDetail').hide(300);
 		});
 
