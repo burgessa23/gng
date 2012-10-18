@@ -98,7 +98,8 @@ function getBlogRolls () {
 						var entry = result.feed.entries[i];
 						var fmtDate = entry.publishedDate.substring(0, parseInt(entry.publishedDate.length - 15, 10));
 						var entryImageUrl = $(entry.content).find('img').eq(0).attr('src');
-						p_perBlogPosts.push('<li id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + entry.title + '</span></a><br/><span class="postBody">'+ entry.content +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
+						var theTitle = entry.title.toUpperCase();
+						p_perBlogPosts.push('<li id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + theTitle + '</span></a><br/><span class="postBody">'+ entry.content +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
 					}
 				}
 				p_mergedPosts.push(p_perBlogPosts);
@@ -121,7 +122,8 @@ function getBlogRolls () {
 						var entry = result.feed.entries[i];
 						var fmtDate = entry.publishedDate.substring(0, parseInt(entry.publishedDate.length - 15, 10));
 						var entryImageUrl = $(entry.content).find('img').eq(0).attr('src');
-						p_perBlogPosts.push('<li id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + entry.title + '</span></a><br/><span class="postBody">'+ entry.contentSnippet +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
+						var theTitle = entry.title.toUpperCase();
+						p_perBlogPosts.push('<li id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + theTitle + '</span></a><br/><span class="postBody">'+ entry.contentSnippet +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
 					}
 				}
 				p_mergedPosts.push(p_perBlogPosts);
@@ -192,7 +194,7 @@ function FeedPuller (searchStr) {
 				articleIsNew = true;
 				output.push('<li id="'+i+'_'+runCount+'" class="articleNew"><div class="wrapper"><div class="thumb_container"><span id="newFlag_'+i+'_'+runCount+'" class="date new showing"></span></div></div><div class="text"><span class="date" style="opacity: 1; display: block;">'+fmtDate+'</span><span class="headline-txt">'+tweetContent+'</span></div><div class="clear"></div></li>');
 			} else {
-				output.push('<li class="articleNum"><div class="wrapper"><div class="thumb_container"></div></div><div class="text"><span class="date" style="opacity: 1; display: block;">'+fmtDate+'</span><span class="headline-txt">'+tweetContent+'</span></div><div class="clear"></div></li>');
+				output.push('<li class="articleNum"><div class="wrapper"><div class="thumb_container"></div></div><div class="text"><span class="date" style="opacity: 1; display: block;">'+fmtDate+'</span><span class="postBody">'+tweetContent+'</span></div><div class="clear"></div></li>');
 			}
 	    }
 	    $("#tweet_list").prepend(output.join(''));
