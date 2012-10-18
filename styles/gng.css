@@ -33,6 +33,12 @@ p {
 	color: #999;
 }
 
+.copy-txt , .copy-txt  a{
+	font-size: 14px;
+	font-family: Garamond;
+	color: #999;
+}
+
 .date {
 	color: #cccccc;
 	font-size: 11px;
@@ -258,8 +264,6 @@ li{
 
 .bottomInfo div {
 	width: 300px;
-	/*border: 1px cyan solid;*/
-
 }
 
 a.bottominfo {
@@ -272,7 +276,7 @@ a.bottominfo {
 
 .bottomNav{
 	width: 910px;
-	/* class, id, i dont know!*/
+	margin-bottom: 20px;
 }
 
 .bottomNav ul{
