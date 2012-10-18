@@ -13,6 +13,20 @@ jQuery(document).ready(function() {
 		getBlogRolls();
 		var myFeed = new FeedPuller('sydlovesfashion');
 	}
+	// click bindings for the image nav section
+	$('#servicesFloat').bind('click', function() {
+		window.location = 'services.html';
+	});
+	$('#blogFloat').bind('click', function() {
+		window.location = 'blog.html';
+	});
+	$('#contactFloat').bind('click', function() {
+		window.location = 'contact.php';
+	});
+	$('#aboutFloat').bind('click', function() {
+		window.location = 'about.html';
+	});
+
 	// animation stuff for the image nav section
 	$('#servicesNavItem').bind('mouseenter', function() {
 		$('#servicesFloat').animate({'top': '295px'}, 300);
@@ -123,7 +137,7 @@ function getBlogRolls () {
 						var fmtDate = entry.publishedDate.substring(0, parseInt(entry.publishedDate.length - 15, 10));
 						var entryImageUrl = $(entry.content).find('img').eq(0).attr('src');
 						var theTitle = entry.title.toUpperCase();
-						p_perBlogPosts.push('<li id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + theTitle + '</span></a><br/><span class="postBody">'+ entry.contentSnippet +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
+						p_perBlogPosts.push('<li style="position: relative;" id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + theTitle + '</span></a><br/><span class="postBody">'+ entry.contentSnippet +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
 					}
 				}
 				p_mergedPosts.push(p_perBlogPosts);

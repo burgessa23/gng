@@ -8,6 +8,13 @@
 	<script type="text/javascript" src="scripts/utils.js"></script>
 	<link rel="stylesheet" href="styles/gng.css">
 	<link rel="icon" type="image/png" href="images/favicon.ico">
+	<!--[if IE 7]>
+	<style>
+		.bottomInfo {  
+    		width: 590px;  
+		}  
+	</style>
+	<![endif]-->
 </head>
 <body>
 		<div style="width: 100%;background-color: #000;margin: 0px;padding:0px;">
@@ -38,13 +45,13 @@
 				<div class="mainNav">
 					<div style="float:left; width: 285px;">
 						<div id="servicesNavItem">
-							<a href="services.html"><img src="images/services.jpg" height="360" width="280" alt="" ></a>
+							<a href="services.html"><img src="images/services.jpg" height="360" width="280" alt="" border="0"></a>
 							<div id="servicesFloat" class="floatTxt" style="left: 40px; top: 355px;">
 								Services<p id="servicesDetail" style="display:none;">A firm created exclusively<br/>for fashion industry clients</p>
 							</div>
 						</div>
 						<div id="contactNavItem">
-							<a href="contact.html"><img src="images/contact.jpg" height="170" width="280" alt=""></a>
+							<a href="contact.php"><img src="images/contact.jpg" height="170" width="280" alt="" border="0"></a>
 							<div id="contactFloat" class="floatTxt" style="left: 40px; top: 550px;">
 								Contact<p id="contactDetail" style="display:none;">Here is some text<br/>and some more text</p>
 							</div>
@@ -52,13 +59,13 @@
 					</div>
 					<div style="float:right; width: 285px;">
 						<div id="blogNavItem">
-							<a href="blog.html"><img src="images/blog.jpg" height="170" width="280" alt=""></a>
+							<a href="blog.html"><img src="images/blog.jpg" height="170" width="280" alt="" border="0"></a>
 							<div id="blogFloat" class="floatTxt" style="left: 357px; top: 165px;">
 								Blog<p id="blogDetail" style="display:none;">Here is some text<br/>Here is some text</p>
 							</div>
 						</div>
 						<div id="aboutNavItem">
-							<a href="about.html"><img src="images/about.jpg" height="360" width="280" alt="" id="aboutNavItem"></a>
+							<a href="about.html"><img src="images/about.jpg" height="360" width="280" alt="" id="aboutNavItem" border="0"></a>
 							<div id="aboutFloat" class="floatTxt" style="left: 357px; top: 550px;">
 								About<p id="aboutDetail" style="display:none;">Blurb goes here<br/>and also here</p>
 							</div>
@@ -85,10 +92,10 @@
 					</p>
 					<h2>CONNECT</h2>
 					<div style="padding-left: 65px;">
-						<a href="http://www.facebook.com/GossipGlamour"><img class="socialLink" src="images/fbIcon.png" /></a>
-						<a href="http://www.twitter.com/gossipglamour"><img class="socialLink" src="images/twitterIcon.png" /></a>
+						<a href="http://www.facebook.com/GossipGlamour"><img class="socialLink" src="images/fbIcon.png" border="0" /></a>
+						<a href="http://www.twitter.com/gossipglamour"><img class="socialLink" src="images/twitterIcon.png" border="0" /></a>
 						<!-- <img class="socialLink" src="images/linkinIcon.png" /> -->
-						<a href="https://plus.google.com/100693275647465467088" rel="publisher"><img class="socialLink" src="images/icons.png" /></a>
+						<a href="https://plus.google.com/100693275647465467088" rel="publisher"><img class="socialLink" src="images/icons.png" border="0" /></a>
 					</div>
 					<h2>AFFLIATED PAGES</h2>
 					<p id="affiliates">
@@ -109,14 +116,14 @@
 				<div class="bottomInfo">
 					<div style="float:left;">
 						<h2>SYDNEY LOVES FASHION</h2>
-						<div id="feedWrapper">
-							<ul id="post_list"></ul>
+						<div id="feedWrapper" style="position: relative; overflow: hidden;">
+							<ul id="post_list" style="position: relative; width: 320px; margin-left: 0px;"></ul>
 						</div>
 					</div>
 					<div style="float:left;">
 						<h2>GOSSIP&GLAMOUR TWITTER</h2>
-						<div id="feedWrapper">
-							<ul id="tweet_list"></ul>
+						<div id="feedWrapper2" style="position: relative; overflow: hidden;">
+							<ul id="tweet_list" style="position: relative; width: 320px; margin-left: 0px;"></ul>
 						</div>
 					</div>
 				</div>
