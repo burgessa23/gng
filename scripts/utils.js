@@ -112,7 +112,7 @@ function getBlogRolls () {
 						var entry = result.feed.entries[i];
 						var fmtDate = entry.publishedDate.substring(0, parseInt(entry.publishedDate.length - 15, 10));
 						var entryImageUrl = $(entry.content).find('img').eq(0).attr('src');
-						var theTitle = entry.title.toUpperCase();
+						var theTitle = entry.title;
 						p_perBlogPosts.push('<li id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + theTitle + '</span></a><br/><span class="postBody">'+ entry.content +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
 					}
 				}
