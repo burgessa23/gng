@@ -360,6 +360,10 @@ a {
 	background-repeat: repeat-x;
 }
 
+#retail h1{
+	margin-bottom: 20px;
+}
+
 #retail p {
 	padding-left: 15px;
 	line-height: 18px;
