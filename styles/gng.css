@@ -15,6 +15,16 @@ p {
 	background-color: #000;
 }
 
+.quote {
+	font-style: italic;
+}
+
+.auth {
+	font-size: 14px;
+	font-family: Garamond;
+	color: #999;
+}
+
 .headline-txt a, .headline {
 	font-family: Arial;
 	color: #EEE;
@@ -332,4 +342,14 @@ label {
 
 a {
 	border: none;
+}
+
+.stud {
+	background-image: url('../images/stud.png');
+	background-position: bottom;
+	width:100%;
+	height: 20px;
+	position:absolute;
+	top:158px;
+	background-repeat: repeat-x;
 }
