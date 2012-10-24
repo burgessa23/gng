@@ -152,6 +152,11 @@ body {
 	filter:alpha(opacity=40);
 }
 
+.profilePic .floatTxt a {
+	color: #FFF;
+	text-decoration: none;
+}
+
 .profilePic .floatTxt:hover {
 	opacity: 0.4;
 	filter:alpha(opacity=40);
@@ -353,4 +358,9 @@ a {
 	position:absolute;
 	top:158px;
 	background-repeat: repeat-x;
+}
+
+#retail p {
+	padding-left: 15px;
+	line-height: 18px;
 }
