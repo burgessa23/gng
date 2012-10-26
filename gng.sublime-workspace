@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"rep",
+				"repeat-y"
+			],
+			[
+				"backg",
+				"background-repeat"
+			],
+			[
+				"backgr",
+				"background-repeat"
+			],
+			[
+				"bord",
+				"border-bottom:   (property)"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"posit",
+				"position"
+			],
+			[
+				"hei",
+				"height:   (property)"
+			],
+			[
+				"url",
+				"url(  (value)"
+			],
+			[
+				"background-",
+				"background-image:   (property)"
+			],
+			[
+				"bo",
+				"border=  (attribute)"
+			],
+			[
+				"let",
+				"letter-spacing"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
 				"overflow",
 				"overflow:   (property)"
 			],
@@ -80,10 +132,6 @@
 				"tweet_list"
 			],
 			[
-				"bord",
-				"border-bottom"
-			],
-			[
 				"fon",
 				"font-weight"
 			],
@@ -102,10 +150,6 @@
 			[
 				"wi",
 				"width"
-			],
-			[
-				"hei",
-				"height"
 			],
 			[
 				"padd",
@@ -138,10 +182,6 @@
 			[
 				"for",
 				"for	for (…) {…}"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"it",
@@ -359,7 +399,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6370,
+				"buffer_size": 6460,
 				"line_ending": "Unix"
 			}
 		},
@@ -367,7 +407,7 @@
 			"file": "blog.html",
 			"settings":
 			{
-				"buffer_size": 3721,
+				"buffer_size": 3831,
 				"line_ending": "Unix"
 			}
 		},
@@ -375,7 +415,7 @@
 			"file": "about.html",
 			"settings":
 			{
-				"buffer_size": 4324,
+				"buffer_size": 7654,
 				"line_ending": "Unix"
 			}
 		},
@@ -383,7 +423,7 @@
 			"file": "services.html",
 			"settings":
 			{
-				"buffer_size": 5539,
+				"buffer_size": 4324,
 				"line_ending": "Unix"
 			}
 		},
@@ -391,7 +431,7 @@
 			"file": "styles/gng.css",
 			"settings":
 			{
-				"buffer_size": 4479,
+				"buffer_size": 5179,
 				"line_ending": "Unix"
 			}
 		},
@@ -399,7 +439,7 @@
 			"file": "scripts/utils.js",
 			"settings":
 			{
-				"buffer_size": 8922,
+				"buffer_size": 8908,
 				"line_ending": "Unix"
 			}
 		},
@@ -407,7 +447,7 @@
 			"file": "contact.php",
 			"settings":
 			{
-				"buffer_size": 4639,
+				"buffer_size": 4666,
 				"line_ending": "Unix"
 			}
 		},
@@ -681,6 +721,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"floattxt",
+			"h2",
+			"body",
+			"ul",
+			"opacity",
 			"#feedwrapper",
 			"selected",
 			"body",
@@ -812,7 +857,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -820,15 +865,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 6370,
+						"buffer_size": 6460,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								546,
-								546
+								880,
+								880
 							]
 						],
 						"settings":
@@ -925,6 +970,7 @@
 							"sublimelinter_popup_errors_on_save": false,
 							"sublimelinter_syntax_map":
 							{
+								"C++": "c",
 								"Python Django": "python",
 								"Ruby on Rails": "ruby"
 							},
@@ -944,15 +990,15 @@
 					"file": "blog.html",
 					"settings":
 					{
-						"buffer_size": 3721,
+						"buffer_size": 3831,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1322,
-								1322
+								768,
+								768
 							]
 						],
 						"settings":
@@ -1049,6 +1095,7 @@
 							"sublimelinter_popup_errors_on_save": false,
 							"sublimelinter_syntax_map":
 							{
+								"C++": "c",
 								"Python Django": "python",
 								"Ruby on Rails": "ruby"
 							},
@@ -1058,7 +1105,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 526.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1068,15 +1115,15 @@
 					"file": "about.html",
 					"settings":
 					{
-						"buffer_size": 4324,
+						"buffer_size": 7654,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4183,
-								4183
+								768,
+								768
 							]
 						],
 						"settings":
@@ -1173,6 +1220,7 @@
 							"sublimelinter_popup_errors_on_save": false,
 							"sublimelinter_syntax_map":
 							{
+								"C++": "c",
 								"Python Django": "python",
 								"Ruby on Rails": "ruby"
 							},
@@ -1181,7 +1229,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 531.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1191,15 +1239,15 @@
 					"file": "services.html",
 					"settings":
 					{
-						"buffer_size": 5539,
+						"buffer_size": 4324,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5398,
-								5398
+								1734,
+								1734
 							]
 						],
 						"settings":
@@ -1296,6 +1344,7 @@
 							"sublimelinter_popup_errors_on_save": false,
 							"sublimelinter_syntax_map":
 							{
+								"C++": "c",
 								"Python Django": "python",
 								"Ruby on Rails": "ruby"
 							},
@@ -1304,7 +1353,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1291.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1314,15 +1363,15 @@
 					"file": "styles/gng.css",
 					"settings":
 					{
-						"buffer_size": 4479,
+						"buffer_size": 5179,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3718,
-								3718
+								5107,
+								5107
 							]
 						],
 						"settings":
@@ -1427,7 +1476,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4024.0,
+						"translation.y": 6148.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1437,15 +1486,15 @@
 					"file": "scripts/utils.js",
 					"settings":
 					{
-						"buffer_size": 8922,
+						"buffer_size": 8908,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4863,
-								4863
+								3580,
+								3580
 							]
 						],
 						"settings":
@@ -1552,7 +1601,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1792.0,
+						"translation.y": 1579.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1562,15 +1611,15 @@
 					"file": "contact.php",
 					"settings":
 					{
-						"buffer_size": 4639,
+						"buffer_size": 4666,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4498,
-								4498
+								1763,
+								1763
 							]
 						],
 						"settings":
@@ -1677,7 +1726,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1177.0,
+						"translation.y": 803.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
