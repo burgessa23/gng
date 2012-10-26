@@ -1,7 +1,7 @@
 /*gg css*/
 p {
-	font-family: sans-serif;
-	font-size: 13px;
+	font-family: Garamond;
+	font-size: 16px;
 }
 .feedContent {
 	font-family: sans-serif;
@@ -144,7 +144,7 @@ body {
 	background-color: white;
 	margin: 0px;
 	padding: 0px;
-	color: #666;
+	color: #000;
 }
 
 #selected {
@@ -209,6 +209,7 @@ h1{
 #affiliates a {
 	color: #666;
 	font-style: italic;
+	font-family: Arial;
 }
 
 h2{
@@ -239,10 +240,10 @@ h2{
 }
 
 .welcome p{
-	font-family: arial;
-	font-size: 15px;
+	font-family: Garamond;
+	font-size: 16px;
 	text-align: left;
-	color: #666;
+	color: #000;
 }
 
 .socialLink:hover {
@@ -269,13 +270,13 @@ li{
 	position: relative;
 	border-bottom: 1px solid #999;
 	text-align: center;
-	color: #666;
+	color: #000;
 	letter-spacing: 3px;
 	font-family: Garamond;
 }
 
 .nav ul a, .bottomNav ul a {
-	color: #666;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -367,4 +368,5 @@ a {
 #retail p {
 	padding-left: 15px;
 	line-height: 18px;
+	font-size: 16px;
 }
