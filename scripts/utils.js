@@ -114,7 +114,7 @@ function getBlogRolls () {
 						var entryImageUrl = $(entry.content).find('img').eq(0).attr('src');
 						var theTitle = entry.title;
 						if (entry.categories[0] === 'GG' ) {
-							p_perBlogPosts.push('<li id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + theTitle + '</span></a><br/><span class="postBody">'+ entry.content +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
+							p_perBlogPosts.push('<li id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + theTitle + '</span></a><br/><span class="postBody">'+ entry.content +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE; width: 90%;"></div></li>');
 						}
 					}
 				}
@@ -140,7 +140,7 @@ function getBlogRolls () {
 						var entryImageUrl = $(entry.content).find('img').eq(0).attr('src');
 						var theTitle = entry.title.toUpperCase();
 						if (entry.categories[0] === 'GG' ) {
-							p_perBlogPosts.push('<li style="position: relative;" id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + theTitle + '</span></a><br/><span class="postBody">'+ entry.contentSnippet +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE;"></div></li>');
+							p_perBlogPosts.push('<li style="position: relative;" id="articeNum' + i + '"><div class="text"><span class="date" style="opacity: 1; display: block;">' + fmtDate + '</span><a class="headline" target="_blank" href="' + entry.link + '"><span class="headline-txt">' + theTitle + '</span></a><br/><span class="postBody">'+ entry.contentSnippet +'</span></div><div class="clear" style="border-bottom: 1px solid #EEE; width: 90%;"></div></li>');
 						}
 					}
 				}

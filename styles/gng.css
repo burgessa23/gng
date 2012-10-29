@@ -76,7 +76,7 @@ p {
 	margin: 0 auto;
 	padding: .75em 0;
 	overflow: hidden;
-	border-bottom: 1px solid #EEE;
+	border-bottom: 1px solid #000;
 	font-size: 100%;
 	line-height: 1.4;
 }
@@ -132,7 +132,7 @@ p {
 }
 
 .selectedNav {
-	border-bottom: 7px solid #999;
+	border-bottom: 7px solid #000;
 }
 
 .wrapper {
@@ -202,7 +202,7 @@ h1{
 	font-weight: 400;
 	font-size: 20px;
 	padding-bottom: 8px;
-	border-bottom: 1px solid #EEE;
+	border-bottom: 1px solid #000;
 	letter-spacing: 2px;
 }
 
@@ -218,7 +218,7 @@ h2{
 	font-size: 17px;
 	font-weight: 400;
 	padding-bottom: 8px;
-	border-bottom: 1px solid #EEE;
+	border-bottom: 1px solid #000;
 	letter-spacing: 2px;
 }
 
@@ -232,7 +232,7 @@ h2{
 	float: left;
 	width: 600px;
 	padding-bottom: 10px;
-	border-bottom: 3px double #999;
+	border-bottom: 3px double #000;
 }
 
 .mainNav div img {
@@ -269,7 +269,7 @@ li{
 	margin: 0 auto;
 	font-size: 20px;
 	position: relative;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid #000;
 	text-align: center;
 	color: #000;
 	letter-spacing: 3px;
@@ -282,7 +282,7 @@ li{
 }
 
 .bottomNav ul {
-	border-top: 1px solid #999;
+	border-top: 1px solid #000;
 }
 
 .bottomInfo {
@@ -316,8 +316,8 @@ a.bottominfo {
 	width: 910px;
 	padding: 10px;
 	margin: 0px auto 0px auto;
-	border-top: 1px solid #999;
-	border-bottom: 1px solid #999;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
 	text-align: center;
 }
 
